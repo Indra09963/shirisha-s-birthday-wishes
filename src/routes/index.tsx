@@ -18,8 +18,8 @@ const wishes = [
   },
   {
     icon: Heart,
-    title: "Stay Loved",
-    text: "Surrounded by people who adore you — today and always. Your kindness is a gift the world keeps unwrapping.",
+    title: "Stay Cherished",
+    text: "Surrounded by people who appreciate you — today and always. Your kindness is a gift the world keeps unwrapping.",
   },
   {
     icon: Cake,
@@ -38,7 +38,7 @@ const memories = [
   "the late-night talks about everything and nothing",
   "the way you turn ordinary days into stories",
   "the courage you carry without ever showing off",
-  "the friend you are — the one I'm so lucky to have",
+  "the friend you are — the one I'm so lucky to have around",
 ];
 
 function Index() {
@@ -163,7 +163,7 @@ function Index() {
             viewport={{ once: true }}
             className="font-script text-2xl text-primary"
           >
-            things I love about you
+            things I admire about you
           </motion.p>
           <h3 className="text-4xl md:text-5xl font-bold mt-2 mb-12">A small (incomplete) list</h3>
 
@@ -210,13 +210,13 @@ function Index() {
           </h3>
           <p className="font-script text-3xl mt-6 text-primary">…and then make a thousand more.</p>
           <p className="mt-8 text-muted-foreground">
-            With all my love, on your special day. 💖
+            Wishing you the brightest day ever. 🎉
           </p>
         </motion.div>
       </section>
 
       <footer className="relative z-10 py-8 text-center text-sm text-muted-foreground">
-        Made with <Heart className="inline h-3 w-3 fill-primary text-primary" /> for Shirisha
+        Made with <Sparkles className="inline h-3 w-3 fill-primary text-primary" /> for Shirisha
       </footer>
     </div>
   );
