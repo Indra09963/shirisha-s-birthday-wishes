@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Heart, Sparkles, Cake, Gift } from "lucide-react";
 import heroImg from "@/assets/birthday-hero.jpg";
 import { Confetti } from "@/components/Confetti";
+import { SurpriseGate } from "@/components/SurpriseGate";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -40,9 +42,15 @@ const memories = [
 ];
 
 function Index() {
+  const [opened, setOpened] = useState(false);
+
   return (
     <div className="relative min-h-screen overflow-hidden" style={{ background: "var(--gradient-soft)" }}>
-      <Confetti />
+      <AnimatePresence>
+        {!opened && <SurpriseGate key="gate" onOpen={() => setOpened(true)} />}
+      </AnimatePresence>
+
+      {opened && <Confetti />}
 
       {/* Hero */}
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
