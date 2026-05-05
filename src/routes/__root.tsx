@@ -32,10 +32,14 @@ export const Route = createRootRoute({
       { title: "Happy Birthday Shirisha 🎉" },
       { name: "description", content: "A heartfelt birthday tribute to Shirisha — wishes, memories and love." },
       { property: "og:title", content: "Happy Birthday Shirisha 🎉" },
-      { property: "og:description", content: "A heartfelt birthday tribute to Shirisha." },
+      { property: "og:description", content: "A heartfelt birthday tribute to Shirisha — wishes, memories and love." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Happy Birthday Shirisha 🎉" },
+      { name: "twitter:description", content: "A heartfelt birthday tribute to Shirisha — wishes, memories and love." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e99e0048-d791-4e22-bf8a-cb97396d784c/id-preview-4f3d0a59--dc7968b5-f6ac-4b68-a57f-6276ab02b12f.lovable.app-1777997147811.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e99e0048-d791-4e22-bf8a-cb97396d784c/id-preview-4f3d0a59--dc7968b5-f6ac-4b68-a57f-6276ab02b12f.lovable.app-1777997147811.png" },
     ],
     links: [
       {
